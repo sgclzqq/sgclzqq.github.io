@@ -5,7 +5,7 @@
     <entry>
       <title>unity笔记</title>
       <link href="/2018/03/14/unity%E7%AC%94%E8%AE%B0/"/>
-      <content type="html"><![CDATA[<h2 id="unity日常笔记"><a href="#unity日常笔记" class="headerlink" title="unity日常笔记"></a>unity日常笔记</h2><h3 id="代码中改变Light组件的ShadowType属性"><a href="#代码中改变Light组件的ShadowType属性" class="headerlink" title="代码中改变Light组件的ShadowType属性"></a>代码中改变Light组件的ShadowType属性</h3><pre><code class="CSharp">light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.NoneAstar算法</code></pre>]]></content>
+      <content type="html"><![CDATA[<h1 id="unity日常笔记"><a href="#unity日常笔记" class="headerlink" title="unity日常笔记"></a>unity日常笔记</h1><h2 id="代码中改变Light组件的ShadowType属性"><a href="#代码中改变Light组件的ShadowType属性" class="headerlink" title="代码中改变Light组件的ShadowType属性"></a>代码中改变Light组件的ShadowType属性</h2><pre><code class="CSharp">light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.NoneAstar算法</code></pre>]]></content>
       
       <categories>
           
