@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://sgclzqq.com">
-  <title>unity笔记 | sgclzqq</title>
+  <title>Unity组件本地映射 | sgclzqq</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="unity日常笔记代码中改变Light组件的ShadowType属性1light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.None">
-<meta name="keywords" content="unity笔记">
+  <meta name="description" content="Unity组件本地映射通过JsonNet插件将Unity组件的属性值保存到本地的Json文件中，便于重新加载数据，恢复组件属性值，达到保存组件状态的目标。 TextMesh组件本地映射TextMesh本地映射 123456789101112131415161718192021public JToken GenerateJToken(Component component)        &amp;#123">
+<meta name="keywords" content="Unity笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="unity笔记">
-<meta property="og:url" content="http://sgclzqq.com/2018/03/14/unity笔记/index.html">
+<meta property="og:title" content="Unity组件本地映射">
+<meta property="og:url" content="http://sgclzqq.com/2018/04/09/Unity组件本地映射/index.html">
 <meta property="og:site_name" content="sgclzqq">
-<meta property="og:description" content="unity日常笔记代码中改变Light组件的ShadowType属性1light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.None">
+<meta property="og:description" content="Unity组件本地映射通过JsonNet插件将Unity组件的属性值保存到本地的Json文件中，便于重新加载数据，恢复组件属性值，达到保存组件状态的目标。 TextMesh组件本地映射TextMesh本地映射 123456789101112131415161718192021public JToken GenerateJToken(Component component)        &amp;#123">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-09T13:13:32.115Z">
+<meta property="og:updated_time" content="2018-04-09T13:12:23.881Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="unity笔记">
-<meta name="twitter:description" content="unity日常笔记代码中改变Light组件的ShadowType属性1light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.None">
+<meta name="twitter:title" content="Unity组件本地映射">
+<meta name="twitter:description" content="Unity组件本地映射通过JsonNet插件将Unity组件的属性值保存到本地的Json文件中，便于重新加载数据，恢复组件属性值，达到保存组件状态的目标。 TextMesh组件本地映射TextMesh本地映射 123456789101112131415161718192021public JToken GenerateJToken(Component component)        &amp;#123">
   
     <link rel="alternative" href="/atom.xml" title="sgclzqq" type="application/atom+xml">
   
@@ -145,27 +145,35 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-unity笔记" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Unity组件本地映射" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      unity笔记
+      Unity组件本地映射
     </h1>
   
 
         
-        <a href="/2018/03/14/unity笔记/" class="archive-article-date">
-  	<time datetime="2018-03-14T05:57:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-14</time>
+        <a href="/2018/04/09/Unity组件本地映射/" class="archive-article-date">
+  	<time datetime="2018-04-09T12:41:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="unity日常笔记"><a href="#unity日常笔记" class="headerlink" title="unity日常笔记"></a>unity日常笔记</h1><h2 id="代码中改变Light组件的ShadowType属性"><a href="#代码中改变Light组件的ShadowType属性" class="headerlink" title="代码中改变Light组件的ShadowType属性"></a>代码中改变Light组件的ShadowType属性</h2><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">light.shadows=LightShadow.Hard; <span class="comment">//LightShadow.Soft,LightShadow.None</span></span><br></pre></td></tr></table></figure>
+        <h1 id="Unity组件本地映射"><a href="#Unity组件本地映射" class="headerlink" title="Unity组件本地映射"></a>Unity组件本地映射</h1><p>通过JsonNet插件将Unity组件的属性值保存到本地的Json文件中，便于重新加载数据，恢复组件属性值，达到保存组件状态的目标。</p>
+<h2 id="TextMesh组件本地映射"><a href="#TextMesh组件本地映射" class="headerlink" title="TextMesh组件本地映射"></a>TextMesh组件本地映射</h2><p>TextMesh本地映射</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> JToken <span class="title">GenerateJToken</span>(<span class="params">Component component</span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            TextMesh e = component <span class="keyword">as</span> TextMesh;</span><br><span class="line">            <span class="keyword">if</span> (!e) <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">            JObject jo = <span class="keyword">new</span> JObject();</span><br><span class="line">            jo.Add(<span class="string">"type"</span>, <span class="keyword">typeof</span>(TextMesh).FullName);</span><br><span class="line">            jo.Add(<span class="string">"text"</span>, e.text);</span><br><span class="line">            jo.Add(<span class="string">"offsetZ"</span>, e.offsetZ);</span><br><span class="line">            jo.Add(<span class="string">"characterSize"</span>, e.characterSize);</span><br><span class="line">            jo.Add(<span class="string">"lineSpacing"</span>, e.lineSpacing);</span><br><span class="line">            jo.Add(<span class="string">"anchor"</span>, (<span class="keyword">int</span>) e.anchor);</span><br><span class="line">            jo.Add(<span class="string">"alignment"</span>, (<span class="keyword">int</span>)e.alignment);</span><br><span class="line">            jo.Add(<span class="string">"tabSize"</span>, e.tabSize);</span><br><span class="line">            jo.Add(<span class="string">"fontSize"</span>, e.fontSize);</span><br><span class="line">            jo.Add(<span class="string">"fontStyle"</span>, (<span class="keyword">int</span>)e.fontStyle);</span><br><span class="line">            jo.Add(<span class="string">"richText"</span>, e.richText);</span><br><span class="line">            <span class="keyword">var</span> color = e.color;</span><br><span class="line">            <span class="keyword">var</span> colorStr = <span class="keyword">string</span>.Format(<span class="string">"&#123;0&#125;,&#123;1&#125;,&#123;2&#125;,&#123;3&#125;"</span>, color.r, color.g, color.b, color.a);</span><br><span class="line">            jo.Add(<span class="string">"color"</span>, colorStr);</span><br><span class="line">            <span class="keyword">return</span> jo;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p>TextMesh加载恢复</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ApplyJToken</span>(<span class="params">Component component, JToken jt</span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            TextMesh e = component <span class="keyword">as</span> TextMesh;</span><br><span class="line">            <span class="keyword">if</span> (!e) <span class="keyword">return</span>;</span><br><span class="line">            e.text = (<span class="keyword">string</span>) jt[<span class="string">"text"</span>];</span><br><span class="line">            e.offsetZ = (<span class="keyword">float</span>) jt[<span class="string">"offsetZ"</span>];</span><br><span class="line">            e.characterSize = (<span class="keyword">float</span>) jt[<span class="string">"characterSize"</span>];</span><br><span class="line">            e.lineSpacing = (<span class="keyword">float</span>) jt[<span class="string">"lineSpacing"</span>];</span><br><span class="line">            e.anchor=(TextAnchor)(<span class="keyword">int</span>)jt[<span class="string">"anchor"</span>];</span><br><span class="line">            e.alignment = (TextAlignment) (<span class="keyword">int</span>) jt[<span class="string">"alignment"</span>];</span><br><span class="line">            e.tabSize = (<span class="keyword">float</span>) jt[<span class="string">"tabSize"</span>];</span><br><span class="line">            e.fontSize = (<span class="keyword">int</span>) jt[<span class="string">"fontSize"</span>];</span><br><span class="line">            e.fontStyle = (FontStyle) (<span class="keyword">int</span>) jt[<span class="string">"fontStyle"</span>];</span><br><span class="line">            e.richText = (<span class="keyword">bool</span>) jt[<span class="string">"richText"</span>];</span><br><span class="line">            FrameCount.CountdownCallBack(<span class="number">1</span>, () =&gt;</span><br><span class="line">            &#123;</span><br><span class="line">                e.font = Font.CreateDynamicFontFromOSFont(<span class="string">"Arial"</span>, <span class="number">12</span>);</span><br><span class="line">                <span class="keyword">if</span> (e.font != <span class="literal">null</span>) e.transform.GetComponent&lt;MeshRenderer&gt;().sharedMaterial = e.font.material;</span><br><span class="line">            &#125;);</span><br><span class="line">            <span class="keyword">var</span> colorStr= (<span class="keyword">string</span>)jt[<span class="string">"color"</span>];</span><br><span class="line">            <span class="keyword">string</span>[] str = colorStr.Split(<span class="string">','</span>);</span><br><span class="line">            Color color = <span class="keyword">new</span> Color(<span class="keyword">float</span>.Parse(str[<span class="number">0</span>]), <span class="keyword">float</span>.Parse(str[<span class="number">1</span>]), <span class="keyword">float</span>.Parse(str[<span class="number">2</span>]), <span class="keyword">float</span>.Parse(str[<span class="number">3</span>]));</span><br><span class="line">            e.color = color;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Light组件本地映射"><a href="#Light组件本地映射" class="headerlink" title="Light组件本地映射"></a>Light组件本地映射</h2><p>Light本地映射</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> JToken <span class="title">GenerateJToken</span>(<span class="params">Component component</span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            Light e = component <span class="keyword">as</span> Light;</span><br><span class="line">            <span class="keyword">if</span> (!e) <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">            JObject jo = <span class="keyword">new</span> JObject();</span><br><span class="line">            jo.Add(<span class="string">"type"</span>, <span class="keyword">typeof</span>(Light).FullName);</span><br><span class="line">            jo.Add(<span class="string">"lightType"</span>, (<span class="keyword">int</span>) e.type);</span><br><span class="line">            <span class="keyword">if</span> (e.type == LightType.Point || e.type == LightType.Spot)</span><br><span class="line">            &#123;</span><br><span class="line">                jo.Add(<span class="string">"range"</span>, e.range);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (e.type == LightType.Spot)</span><br><span class="line">            &#123;</span><br><span class="line">                jo.Add(<span class="string">"spotAngle"</span>, e.spotAngle);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">var</span> color = e.color;</span><br><span class="line">            <span class="keyword">var</span> colorStr = <span class="keyword">string</span>.Format(<span class="string">"&#123;0&#125;,&#123;1&#125;,&#123;2&#125;,&#123;3&#125;"</span>, color.r, color.g, color.b, color.a);</span><br><span class="line">            jo.Add(<span class="string">"color"</span>, colorStr);</span><br><span class="line">            jo.Add(<span class="string">"intensity"</span>, (<span class="keyword">float</span>) e.intensity);</span><br><span class="line">            jo.Add(<span class="string">"shadowType"</span>, (<span class="keyword">int</span>) e.shadows);</span><br><span class="line">            jo.Add(<span class="string">"strength"</span>, e.shadowStrength);</span><br><span class="line">            jo.Add(<span class="string">"shadowResolution"</span>, (<span class="keyword">int</span>) e.shadowResolution);</span><br><span class="line">            jo.Add(<span class="string">"bias"</span>, e.shadowBias);</span><br><span class="line">            jo.Add(<span class="string">"normalBias"</span>, e.shadowNormalBias);</span><br><span class="line">            jo.Add(<span class="string">"nearPlane"</span>, e.shadowNearPlane);</span><br><span class="line">            jo.Add(<span class="string">"renderMode"</span>, (<span class="keyword">int</span>)e.renderMode);</span><br><span class="line">            jo.Add(<span class="string">"mask"</span>, (<span class="keyword">int</span>) e.cullingMask);</span><br><span class="line">            <span class="keyword">return</span> jo;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+<p>Light属性恢复</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ApplyJToken</span>(<span class="params">Component component, JToken jt</span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            Light e = component <span class="keyword">as</span> Light;</span><br><span class="line">            <span class="keyword">if</span> (!e) <span class="keyword">return</span>;</span><br><span class="line">            e.type = (LightType)(<span class="keyword">int</span>)jt[<span class="string">"lightType"</span>];</span><br><span class="line">            <span class="keyword">if</span> (e.type == LightType.Point || e.type == LightType.Spot)</span><br><span class="line">            &#123;</span><br><span class="line">                e.range = (<span class="keyword">float</span>)jt[<span class="string">"range"</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (e.type == LightType.Spot)</span><br><span class="line">            &#123;</span><br><span class="line">                e.spotAngle = (<span class="keyword">float</span>) jt[<span class="string">"spotAngle"</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">var</span> colorStr = (<span class="keyword">string</span>)jt[<span class="string">"color"</span>];</span><br><span class="line">            <span class="keyword">string</span>[] str = colorStr.Split(<span class="string">','</span>);</span><br><span class="line">            Color color = <span class="keyword">new</span> Color(<span class="keyword">float</span>.Parse(str[<span class="number">0</span>]), <span class="keyword">float</span>.Parse(str[<span class="number">1</span>]), <span class="keyword">float</span>.Parse(str[<span class="number">2</span>]), <span class="keyword">float</span>.Parse(str[<span class="number">3</span>]));</span><br><span class="line">            e.color = color;</span><br><span class="line">            e.intensity = (<span class="keyword">float</span>) jt[<span class="string">"intensity"</span>];</span><br><span class="line">            e.shadows = (LightShadows) (<span class="keyword">int</span>) jt[<span class="string">"shadowType"</span>];</span><br><span class="line">            e.shadowStrength = (<span class="keyword">float</span>) jt[<span class="string">"strength"</span>];</span><br><span class="line">            e.shadowResolution = (LightShadowResolution)(<span class="keyword">int</span>) jt[<span class="string">"shadowResolution"</span>];</span><br><span class="line">            e.shadowBias = (<span class="keyword">float</span>) jt[<span class="string">"bias"</span>];</span><br><span class="line">            e.shadowNormalBias = (<span class="keyword">float</span>) jt[<span class="string">"normalBias"</span>];</span><br><span class="line">            e.shadowNearPlane = (<span class="keyword">float</span>) jt[<span class="string">"nearPlane"</span>];</span><br><span class="line">            e.renderMode = (LightRenderMode) (<span class="keyword">int</span>) jt[<span class="string">"renderMode"</span>];</span><br><span class="line">            e.cullingMask = (<span class="keyword">int</span>) jt[<span class="string">"mask"</span>];</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -199,24 +207,13 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">unity笔记</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Unity笔记</a>
         		</li>
       		
 		</ul>
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/unity笔记//" class="article-tag-list-link color3">unity笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -266,7 +263,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxElEQVR42u3aO27DMBAFQN3/0krrIrLfIynaAoaVITviMMViPzyOeJ0v6/XJ1efk969PFi9cXNxp7vl25Rvkh0kOebkjLi7uRm6+/XzIe/+bDzZcXNyHcHNEEtRwcXGfzm0DUxLscHFxf4ebFD8z2+fF1bJaDRcXd4KblzT3fb6lv4uLizvEPcs1VtKsWri4uHu4eUBp045VTVhcXNzf4SZFSP68HdnWQ1ZcXNyl3PxFYxu0T4qMDBcX92ZuHtSSNKV9Z1Fu4eLibuG2xUme+uSN13xHXFzcPdw2+UhqqVXFzz8HwMXF3cLN250zwWs+hfrwflxc3KXcvEkxcyFjLORd1mq4uLg3c/OAkg9Bx46at1xxcXH3cPMGaJ765M2R+hoHLi7udm7b6MxHIHl7dNk9Mlxc3GnuWLLSpilt0nPZ5cXFxd3OTRKdsVbIYFozM+nFxcUtuWe58gJpfliLi4v7LW4bXGYSoLFrFoOHwcXFneaOBa/5/9DglQ5cXNyN3PaCRTG/HRqiHKviIi4u7pe4efHTll64uLjP5d5Sb10JcXFxN3LbQWn7bd5s/fBXuLi4W7htKGlTlja0tQUVLi7uUu4f1q8p+Dz0l6IAAAAASUVORK5CYII=" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACHklEQVR42u3aSW7DMBAEQP//0841QGK5exgHEFk8BbEWlg4DzvJ4xOv5bX3/z/WVP1d+7+MTCwMD47aM/MWvfp09//qafG8YGBjnMF69/tU1+V3X27p+V/IWDAwMjJwxO/zlJAwMDIyckQOSTa+kyhgYGKcx8gJZfkycheaP5+IYGBg3ZOQls///+yP9DQwMjFsxnuXKG5xtuHwuLAwMjL0ZeYDLt9IG7jzFffPhMDAwDmCstBtn5f6kuFakrBgYGIcx2sC3svUc8OYuDAyMAxjJcS1JPldCefIrBgbGaYyVwa9ZUpqkrHVpDwMDY2vGbFQr31C9lWT8a/ZQDAyM2zLaca5ZQnv9gRLkm0+JgYGxNaMthK2X+1fS4GELEwMDYztGG1jbY2KeNrdHVQwMjF0ZSck+by7mTdD1AhwGBsY5jLagNms0toe89liJgYFxJuM6dLatygTWtjOjgIuBgbERY/2h7YFvVlyLPhAGBsbWjIT06bDb7goDA+McRtu8bMPlyihGMQ6CgYFxMCNfOb5OTVc6sRgYGBsxVoYhElJ7ZQL4JeBiYGBsx1gPqSuthfzeN58YAwNja0a+8lZBXoDL091iOAwDA2NTxiw1nZXh2kYmBgYGxizwtaGzDcpJ6MfAwMDIj2jrKe4fjH9hYGBgjIJvO5ax8nwMDIxzGEkS245W5AfBWfsTAwPjHMbs3NVutB1Eq5NYDAyMPRlfR0pqmNFtrtEAAAAASUVORK5CYII=" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,15 +277,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/04/09/Unity组件本地映射/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Unity组件本地映射
-        
-      </div>
-    </a>
   
+    <a href="/2018/03/14/unity笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">unity笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -313,7 +306,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#unity日常笔记"><span class="toc-number">1.</span> <span class="toc-text">unity日常笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#代码中改变Light组件的ShadowType属性"><span class="toc-number">1.1.</span> <span class="toc-text">代码中改变Light组件的ShadowType属性</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Unity组件本地映射"><span class="toc-number">1.</span> <span class="toc-text">Unity组件本地映射</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#TextMesh组件本地映射"><span class="toc-number">1.1.</span> <span class="toc-text">TextMesh组件本地映射</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Light组件本地映射"><span class="toc-number">1.2.</span> <span class="toc-text">Light组件本地映射</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
