@@ -286,7 +286,7 @@
         
           <div class="category-all-page">
             <div class="category-all-title">
-                目前共计 3 个分类
+                目前共计 2 个分类
             </div>
             <div class="category-all">
               <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/unity笔记/">unity笔记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活/">生活</a><span class="category-list-count">1</span></li></ul>
@@ -360,7 +360,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -371,7 +371,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -609,8 +609,10 @@
 
 
 
+
+  
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script src="/js/src/Valine.min.js"></script>
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
@@ -619,18 +621,13 @@
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
+        av: AV, 
         el: '#comments' ,
-        verify: false,
-        notify: false,
         appId: 'nESxd04ABF6BKRTYXiwgo0I7-gzGzoHsz',
         appKey: 'GINr9pnrFbDkcsnXvOGee8RM',
-        placeholder: 'Just go go',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
     });
   </script>
-
 
 
   
