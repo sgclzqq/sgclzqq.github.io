@@ -403,7 +403,21 @@
       
         
           
-            <p>网易云插件测试，可以播放歌单和单首歌曲<br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="351" height="86" src="http://music.163.com/outchain/player?type=2&id=undefined&auto=1&height=66"></iframe></p>
+            <script src="/assets/js/APlayer.min.js"> </script><p>网易云插件测试，可以播放歌单和单首歌曲<br><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
+		<script>
+			new APlayer({
+				element: document.getElementById("aplayer0"),
+				narrow: false,
+				autoplay: true,
+				showlrc: 0,
+				music: {
+					title: "起风了",
+					author: "买辣椒也用券",
+					url: "http://p616rt8t9.bkt.clouddn.com/%E8%B5%B7%E9%A3%8E%E4%BA%86.mp3",
+					pic: "http://p616rt8t9.bkt.clouddn.com/%E8%B5%B7%E9%A3%8E%E4%BA%86.png",
+				}
+			});
+		</script></p>
 
           
         
