@@ -5,7 +5,7 @@
     <entry>
       <title>网易云插件测试</title>
       <link href="/2018/08/25/%E7%BD%91%E6%98%93%E4%BA%91%E6%8F%92%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div id="aplayer1" class="aplayer" style="margin-bottom: 20px;"></div><script>var ap = new APlayer({element: document.getElementById("aplayer1"),narrow: false,autoplay: true,showlrc: 0,music: {title: "起风了",author: "买辣椒也用券",url: "http://p616rt8t9.bkt.clouddn.com/%E8%B5%B7%E9%A3%8E%E4%BA%86.mp3",pic: "http://p616rt8t9.bkt.clouddn.com/%E8%B5%B7%E9%A3%8E%E4%BA%86.png",}});window.aplayers || (window.aplayers = []);window.aplayers.push(ap);</script>]]></content>
+      <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div><script>var ap = new APlayer({element: document.getElementById("aplayer0"),narrow: false,autoplay: true,showlrc: 0,music: {title: "起风了",author: "买辣椒也用券",url: "https://music.163.com/song?id=29436904&userid=3683220",pic: "http://p616rt8t9.bkt.clouddn.com/%E8%B5%B7%E9%A3%8E%E4%BA%86.png",}});window.aplayers || (window.aplayers = []);window.aplayers.push(ap);</script>]]></content>
       
       <categories>
           
