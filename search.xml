@@ -3,9 +3,9 @@
   
     
     <entry>
-      <title>网易云插件测试</title>
+      <title>Hexo+APlayer音乐播放器测试</title>
       <link href="/2018/08/25/%E7%BD%91%E6%98%93%E4%BA%91%E6%8F%92%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-FwPPdHBD" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="75421929" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>]]></content>
+      <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script>    <div id="aplayer-ufUQpWIc" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="2083846198" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="340px" data-preload="none" data-theme="#ad7a86"></div>]]></content>
       
       <categories>
           
