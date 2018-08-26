@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="代码中改变Light组件的ShadowType属性1light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.None  		 			new APlayer({ 				element: document.getElementById(&quot;aplayer0&quot;), 				narrow: false, 				autoplay: t">
+<meta name="description" content="代码中改变Light组件的ShadowType属性1light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.None  		 			var ap = new APlayer({ 				element: document.getElementById(&quot;aplayer0&quot;), 				narrow: false, 				au">
 <meta name="keywords" content="unity笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="unity笔记">
 <meta property="og:url" content="http://sgclzqq.com/2018/03/14/unity笔记/index.html">
 <meta property="og:site_name" content="sgclzqq">
-<meta property="og:description" content="代码中改变Light组件的ShadowType属性1light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.None  		 			new APlayer({ 				element: document.getElementById(&quot;aplayer0&quot;), 				narrow: false, 				autoplay: t">
+<meta property="og:description" content="代码中改变Light组件的ShadowType属性1light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.None  		 			var ap = new APlayer({ 				element: document.getElementById(&quot;aplayer0&quot;), 				narrow: false, 				au">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-08-26T09:12:02.950Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="unity笔记">
-<meta name="twitter:description" content="代码中改变Light组件的ShadowType属性1light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.None  		 			new APlayer({ 				element: document.getElementById(&quot;aplayer0&quot;), 				narrow: false, 				autoplay: t">
+<meta name="twitter:description" content="代码中改变Light组件的ShadowType属性1light.shadows=LightShadow.Hard; //LightShadow.Soft,LightShadow.None  		 			var ap = new APlayer({ 				element: document.getElementById(&quot;aplayer0&quot;), 				narrow: false, 				au">
 
 
 
@@ -403,7 +403,7 @@
         <script src="\assets\js\APlayer.min.js"> </script><h3 id="代码中改变Light组件的ShadowType属性"><a href="#代码中改变Light组件的ShadowType属性" class="headerlink" title="代码中改变Light组件的ShadowType属性"></a>代码中改变Light组件的ShadowType属性</h3><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">light.shadows=LightShadow.Hard; <span class="comment">//LightShadow.Soft,LightShadow.None</span></span><br></pre></td></tr></table></figure>
 <div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
 		<script>
-			new APlayer({
+			var ap = new APlayer({
 				element: document.getElementById("aplayer0"),
 				narrow: false,
 				autoplay: true,
@@ -415,6 +415,8 @@
 					pic: "http://p616rt8t9.bkt.clouddn.com/%E8%B5%B7%E9%A3%8E%E4%BA%86.png",
 				}
 			});
+			window.aplayers || (window.aplayers = []);
+			window.aplayers.push(ap);
 		</script>
 
       
